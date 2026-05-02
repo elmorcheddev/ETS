@@ -1,0 +1,46 @@
+#server:
+#  port: 8080
+#
+#spring:
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/ets?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
+#    username: root
+#    password: root
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+#    properties:
+#      hibernate:
+#        format_sql: true
+#        dialect: org.hibernate.dialect.MySQL8Dialect
+#
+#logging:
+#  level:
+#    org.hibernate.SQL: DEBUG
+ 
+
+spring:
+      datasource:
+        url: jdbc:postgresql://dpg-d7r17oe7r5hc7393hsqg-a.oregon-postgres.render.com:5432/ets_1p3t
+        username: ets_1p3t_user
+        password: 44LF3kB3xJrgAWJJWjLMOIsUtocERjNU
+        driver-class-name: org.postgresql.Driver
+
+      jpa:
+        hibernate:
+          ddl-auto: update
+        show-sql: true
+        properties:
+          hibernate:
+            format_sql: true
+            dialect: org.hibernate.dialect.PostgreSQLDialect
+
+      jackson:
+        serialization:
+          fail-on-empty-beans: false  
+logging:
+      level:
+        org.hibernate.SQL: DEBUG    
